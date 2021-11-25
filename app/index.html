@@ -6,6 +6,7 @@
     <title>Frontend Mentor | Ping coming soon page</title>
     <link rel="stylesheet" href="styles.css">
     <script src="myscript.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div class="container">
@@ -17,13 +18,32 @@
                 <p>
                     We are launching <span class="bold-black">soon!</span><br>
                     <span class="smaller-text">Subscribe and get notified</span>
-                    <div class="email-input">
-                        <input type="text" placeholder="Your Email Address...">
-                        <button class="notify-button"></button>
-                    </div>
                 </p>
+                <div class="email-input">
+                    <input id="email" type="text" placeholder="Your Email Address..." onfocus="this.placeholder=''" onblur="this.placeholder='Your Email Address...'" oninput="validateEmail()">
+                    <button class="notify-button">Notify Me</button><br>
+                </div>
+                <div id="email-error">
+                    <p>Please provide a valid email address</p>
+                </div>
+            </div>
+            <div class="dashboard">
+                <img src="../resources/images/illustration-dashboard.png" alt="">
+            </div>
+            <div class="footer">
+                <!-- <ion-icon name="logo-facebook" style="background-color: hsl(223, 51%, 46%); " class="icon"></ion-icon> -->
+                <!-- <ion-icon name="logo-instagram" style="background-color: hsl(223, 51%, 46%); " class="icon"></ion-icon> -->
+                <!-- <ion-icon name="logo-twitter" style="background-color: hsl(223, 51%, 46%); " class="icon"></ion-icon> -->
+                <div id="icon-wrapper-f" onmouseover="iconHover('f')" onmouseleave="returnToDefault('f')"><i class="fa fa-facebook" id='f'></i></div>
+                <div id="icon-wrapper-i" onmouseover="iconHover('i')" onmouseleave="returnToDefault('i')"><i class="fa fa-instagram" id='i'></i></div>
+                <div id="icon-wrapper-t" onmouseover="iconHover('t')" onmouseleave="returnToDefault('t')"><i class="fa fa-twitter" id="t"></i></div>
+            </div>
+            <div class="copyright-message">
+                <p>@Copyright Ping. All Rights Reserved</p>
             </div>
         </div>
     </div>
+    <!-- <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> -->
 </body>
 </html>
