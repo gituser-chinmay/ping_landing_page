@@ -1,1 +1,84 @@
-.
+@font-face {
+    font-family: franklin;
+    src: url("fonts/LibreFranklin-Light.ttf");
+}
+
+@font-face {
+    font-family: franklin_semibold;
+    src: url("fonts/LibreFranklin-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: franklin_bold;
+    src: url("fonts/LibreFranklin-Bold.ttf");
+}
+
+body, html, h1, p {
+    padding: 0;
+    margin: 0;
+}
+
+.page-title {
+    display: grid;
+}
+
+.page-title h1 {
+    margin: 75px auto 50px auto;
+    font-family: franklin_bold;
+    font-size: 35px;
+}
+
+.blue {
+    color: hsl(223, 87%, 63%);
+}
+
+.page-content {
+    display: grid;
+}
+
+.welcome-text {
+    margin: 0 auto 0 auto;
+    font-family: franklin;
+    color: hsl(0, 0%, 59%);
+
+    text-align: center;
+}
+
+.welcome-text p {
+    letter-spacing: 1px;
+    font-size: 45px;
+}
+
+.bold-black {
+    font-family: franklin_bold;
+    color: #000;
+}
+
+.smaller-text {
+    font-size: 20px;
+    color: #000;
+    letter-spacing: 0px;
+}
+
+.email-input {
+    margin-top: 30px;
+}
+
+.email-input input {
+    width: 375px;
+    height: 50px;
+
+    border-radius: 30px;
+    border-color: hsl(223, 100%, 88%);
+
+    float: left;
+}
+
+.email-input input::placeholder {
+    margin: auto 0px auto 100px;
+}
+
+.notify-button {
+    width: 110px;
+    height: 50px;
+}
